@@ -32,7 +32,7 @@ body{
             text-decoration: none;
             padding: $unit-4x;
             color: $gray-200;
-            margin: $unit;
+            margin-left: $unit;
             transition: .3s;
             &:hover{
                 color:$gray-100;
