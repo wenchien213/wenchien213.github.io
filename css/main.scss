@@ -67,6 +67,12 @@ body{
     background-color: $black;
     padding: 56px 0 $unit-8x 0;
 }
+@mixin linear-color {
+    background: linear-gradient(-45deg, #00a248 0%, #00a29a 100%);
+}
+@mixin relinear-color {
+    background: linear-gradient(45deg, #00a248 0%, #00a29a 100%);
+}
 .about{
     display: flex;
     justify-content: start;
@@ -106,6 +112,7 @@ body{
                 width: 20px;
                 height: 20px;
                 background-color: $main;
+                @include linear-color;
                 border-radius: 10px;
                 position: relative;
                 margin-right: -20px;
@@ -171,7 +178,8 @@ body{
             }
             .btn{
                 display: block;
-                background-color: $main;
+                background: $main;
+                @include linear-color;
                 padding: $unit-2x;
                 text-align: center;
                 text-decoration: none;
@@ -181,7 +189,8 @@ body{
                 border-radius: 50px;
                 transition: .3s;
                 &:hover{
-                    background-color: $main-dark;
+                    background: $main-dark;
+                    @include relinear-color;
                 }
             }
         }
