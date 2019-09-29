@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
 }
+$main:#00A29A;
+$main-dark:#007d77;
 $gray-100:#f8f8f8;
 $gray-200:#9e9e9e;
 $gray-500:#313131;
@@ -23,6 +25,13 @@ body{
         color: $gray-100;
         margin-bottom: $unit-6x;
         font-weight: 500;
+    }
+    h4{
+        color: $gray-100;
+    }
+    .subtitle{
+        font-size: .75rem;
+        margin-bottom: $unit;
     }
 }
 .header{
@@ -69,7 +78,7 @@ body{
     .description{
         padding: $unit-8x;
         h2{
-            font-size: 80px;
+            font-size: 60px;
             color:$gray-100;
             margin-bottom: $unit-4x;
         }
@@ -81,9 +90,9 @@ body{
 .experience{
     background-color: black;
     padding: $unit-8x 0;
-    .exLists{
+    .lineLists{
         list-style: none;
-        margin: 0 auto;
+        margin: $unit-8x auto;
         width: 0;
         border-right: 1px $gray-200 solid;
         li{
@@ -93,7 +102,7 @@ body{
                 display: inline-block;
                 width: 20px;
                 height: 20px;
-                background-color: #fff;
+                background-color: $main;
                 border-radius: 10px;
                 position: relative;
                 margin-right: -20px;
@@ -112,13 +121,6 @@ body{
                     right: -314px;
                 }
             }
-            h4{
-                color: $gray-100;
-            }
-            .exTime{
-                font-size: .75rem;
-                margin-bottom: $unit;
-            }
             .list{
                 font-size: .875rem;
                 &::before{
@@ -130,6 +132,55 @@ body{
                 padding-top: $unit;
                 border-top: 1px $gray-500 solid;
                 color: $gray-100;
+            }
+        }
+    }
+}
+.portfolio{
+    background-color: black;
+    padding: $unit-8x 0;
+    .projectList{
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .project{
+            width: 30%;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: $unit;
+            margin-bottom: $unit-6x;
+            position: relative;
+            top: 0;
+            transition: .3s ease-in-out;
+            &:hover{
+                position: relative;
+                top:-6px;
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            img{
+                width: 100%;
+                border-radius: $unit;
+            }
+            .des{
+                margin-bottom: $unit-4x;
+            }
+            .btn{
+                display: block;
+                background-color: $main;
+                padding: $unit-2x;
+                text-align: center;
+                text-decoration: none;
+                font-weight: 500;
+                color: $gray-100;
+                margin: 0 auto;
+                border-radius: 50px;
+                transition: .3s;
+                &:hover{
+                    background-color: $main-dark;
+                }
             }
         }
     }

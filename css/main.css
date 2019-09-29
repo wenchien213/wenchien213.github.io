@@ -13,6 +13,11 @@ body {
     color: #f8f8f8;
     margin-bottom: 24px;
     font-weight: 500; }
+  body h4 {
+    color: #f8f8f8; }
+  body .subtitle {
+    font-size: .75rem;
+    margin-bottom: 4px; }
 
 .header {
   height: 56px;
@@ -67,7 +72,7 @@ body {
   .about .description {
     padding: 32px; }
     .about .description h2 {
-      font-size: 80px;
+      font-size: 60px;
       color: #f8f8f8;
       margin-bottom: 16px; }
     .about .description p {
@@ -76,43 +81,89 @@ body {
 .experience {
   background-color: black;
   padding: 32px 0; }
-  .experience .exLists {
+  .experience .lineLists {
     list-style: none;
-    margin: 0 auto;
+    margin: 32px auto;
     width: 0;
     border-right: 1px #9e9e9e solid; }
-    .experience .exLists li {
+    .experience .lineLists li {
       width: 300px; }
-      .experience .exLists li::before {
+      .experience .lineLists li::before {
         content: "";
         display: inline-block;
         width: 20px;
         height: 20px;
-        background-color: #fff;
+        background-color: #00A29A;
         border-radius: 10px;
         position: relative;
         margin-right: -20px; }
-      .experience .exLists li:nth-child(odd) {
+      .experience .lineLists li:nth-child(odd) {
         padding-left: 24px; }
-        .experience .exLists li:nth-child(odd)::before {
+        .experience .lineLists li:nth-child(odd)::before {
           left: -33px; }
-      .experience .exLists li:nth-child(even) {
+      .experience .lineLists li:nth-child(even) {
         padding-right: 24px;
         position: relative;
         left: -324px; }
-        .experience .exLists li:nth-child(even)::before {
+        .experience .lineLists li:nth-child(even)::before {
           right: -314px; }
-      .experience .exLists li h4 {
-        color: #f8f8f8; }
-      .experience .exLists li .exTime {
-        font-size: .75rem;
-        margin-bottom: 4px; }
-      .experience .exLists li .list {
+      .experience .lineLists li .list {
         font-size: .875rem; }
-        .experience .exLists li .list::before {
+        .experience .lineLists li .list::before {
           content: "．"; }
-      .experience .exLists li .whatIDo {
+      .experience .lineLists li .whatIDo {
         margin-top: 4px;
         padding-top: 4px;
         border-top: 1px #313131 solid;
         color: #f8f8f8; }
+
+.portfolio {
+  background-color: black;
+  padding: 32px 0; }
+  .portfolio .projectList {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .portfolio .projectList .project {
+      width: 30%;
+      padding: 12px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      margin-bottom: 24px;
+      position: relative;
+      top: 0;
+      -webkit-transition: .3s ease-in-out;
+      -o-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
+      .portfolio .projectList .project:hover {
+        position: relative;
+        top: -6px;
+        background-color: rgba(255, 255, 255, 0.2); }
+      .portfolio .projectList .project img {
+        width: 100%;
+        border-radius: 4px; }
+      .portfolio .projectList .project .des {
+        margin-bottom: 16px; }
+      .portfolio .projectList .project .btn {
+        display: block;
+        background-color: #00A29A;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 500;
+        color: #f8f8f8;
+        margin: 0 auto;
+        border-radius: 50px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
+        .portfolio .projectList .project .btn:hover {
+          background-color: #007d77; }
