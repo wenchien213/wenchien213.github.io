@@ -63,7 +63,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   background-color: #000000;
-  padding-top: 56px; }
+  padding: 56px 0 32px 0; }
   .about .profileImg {
     height: 90vh;
     width: 40vw;
@@ -80,8 +80,8 @@ body {
       margin-bottom: 8px; }
 
 .experience {
-  background-color: black;
-  padding: 32px 0; }
+  background-color: #000000;
+  padding: 56px 0 32px 0; }
   .experience .lineLists {
     list-style: none;
     margin: 32px auto;
@@ -119,8 +119,8 @@ body {
         color: #f8f8f8; }
 
 .portfolio {
-  background-color: black;
-  padding: 32px 0; }
+  background-color: #000000;
+  padding: 56px 0 32px 0; }
   .portfolio .projectList {
     width: 90%;
     margin: 0 auto;
@@ -168,3 +168,7 @@ body {
         transition: .3s; }
         .portfolio .projectList .project .btn:hover {
           background-color: #007d77; }
+
+.awards {
+  background-color: #000000;
+  padding: 56px 0 32px 0; }

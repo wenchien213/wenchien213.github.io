@@ -11,23 +11,45 @@
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png" />
-    <script src="main.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
+        $(document).ready(function (){
+            $("#toAbout").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#about").offset().top
+                }, 1000);
+            });
+            $("#toEx").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#ex").offset().top
+                }, 1000);
+            });
+            $("#toPortfolio").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#por").offset().top
+                }, 1000);
+            });
+            $("#toAwards").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#awards").offset().top
+                }, 1000);
+            });
+        });
     </script>
 </head>
 <body>
     <div class="header">
         <h1>Wen Chien Lee</h1>
         <nav>
-            <a href="#">ABOUT ME</a>
-            <a href="#">EXPERIENCE</a>
-            <a href="#">PROJECTS</a>
-            <a href="#">AWARDS</a>
+            <a id="toAbout" href="javascript:;">ABOUT ME</a>
+            <a id="toEx" href="javascript:;">EXPERIENCE</a>
+            <a id="toPortfolio" href="javascript:;">PROJECTS</a>
+            <a id="toAwards" href="javascript:;">AWARDS</a>
         </nav>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <div class="profileImg"></div>
         <section class="description">
             <h2>WEN CHIEN LEE</h2>
@@ -39,7 +61,7 @@
             <p>I'm very willing to understand users to inspire many new ideas for improving user experience.</p>
         </section>
     </div>
-    <div class="experience">
+    <div class="experience" id="ex">
         <h3>EXPERIENCE</h3>
         <ul class="lineLists">
             <li>
@@ -83,7 +105,7 @@
             </li>
         </ul>
     </div>
-    <div class="portfolio">
+    <div class="portfolio" id="por">
         <h3>PROJECTS</h3>
         <div class="projectList">
             <div class="project">
@@ -128,7 +150,10 @@
                     <p class="des">An anonymous chatting room.</p>
                     <a class="btn" href="https://www.behance.net/gallery/85965725/Anonymous-Chatting-Room" target="_blank" alt="chatroom" title="link to behance">DETAIL</a>
                 </div>
-            </div>
+        </div>
+    </div>
+    <div class="awards" id="awards">
+        <h3>AWARDS</h3>
     </div>
 </body>
 </html>

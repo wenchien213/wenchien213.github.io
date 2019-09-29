@@ -63,12 +63,15 @@ body{
         }
     }
 }
+@mixin box-basic{
+    background-color: $black;
+    padding: 56px 0 $unit-8x 0;
+}
 .about{
     display: flex;
     justify-content: start;
     align-items: center;
-    background-color: $black;
-    padding-top: 56px;
+    @include box-basic;
     .profileImg{
         height: 90vh;
         width: 40vw;
@@ -89,8 +92,7 @@ body{
     }
 }
 .experience{
-    background-color: black;
-    padding: $unit-8x 0;
+    @include box-basic;
     .lineLists{
         list-style: none;
         margin: $unit-8x auto;
@@ -138,8 +140,7 @@ body{
     }
 }
 .portfolio{
-    background-color: black;
-    padding: $unit-8x 0;
+    @include box-basic;
     .projectList{
         width: 90%;
         margin: 0 auto;
@@ -185,4 +186,7 @@ body{
             }
         }
     }
+}
+.awards{
+    @include box-basic;
 }
