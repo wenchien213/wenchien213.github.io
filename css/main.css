@@ -19,11 +19,15 @@ body {
   body .subtitle {
     font-size: .75rem;
     margin-bottom: 4px; }
+  body .wrapper {
+    margin: 0 auto;
+    max-width: 1280px; }
 
 .header {
   height: 56px;
   background-color: black;
   width: 100%;
+  max-width: 1280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,6 +97,8 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
   background-color: #000000;
   padding: 56px 0 32px 0; }
   @media screen and (max-width: 480px) {
@@ -104,7 +110,7 @@ body {
   .about .profileImg {
     height: 90vh;
     max-height: 600px;
-    width: 40vw;
+    width: 40%;
     background-image: url(../img/wenchien.jpg);
     background-position: center center;
     background-size: cover;

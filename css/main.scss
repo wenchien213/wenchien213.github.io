@@ -15,6 +15,8 @@ $unit-4x:$unit*4;
 $unit-6x:$unit*6;
 $unit-8x:$unit*8;
 
+$max-screen:1280px;
+
 body{
     font-family: "Noto Sans TC script=all rev=1";
     font-weight: 100;
@@ -34,11 +36,16 @@ body{
         font-size: .75rem;
         margin-bottom: $unit;
     }
+    .wrapper{
+        margin: 0 auto;
+        max-width: $max-screen;
+    }
 }
 .header{
     height: 56px;
     background-color: black;
     width: 100%;
+    max-width: $max-screen;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,6 +111,8 @@ body{
     display: flex;
     justify-content: start;
     align-items: center;
+    max-width: $max-screen;
+    margin: 0 auto;
     @include box-basic;
     @media screen and (max-width:480px){
         flex-direction: column;
@@ -111,7 +120,7 @@ body{
     .profileImg{
         height: 90vh;
         max-height: 600px;
-        width: 40vw;
+        width: 40%;
         background-image: url(../img/wenchien.jpg);
         background-position: center center;
         background-size: cover;
