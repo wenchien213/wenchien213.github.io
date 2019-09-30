@@ -41,16 +41,46 @@ body {
   z-index: 99; }
   .header h1 {
     font-size: 1rem; }
-  .header nav a {
-    text-decoration: none;
-    padding: 16px;
-    color: #9e9e9e;
-    margin-left: 4px;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s; }
-    .header nav a:hover {
-      color: #f8f8f8; }
+  @media screen and (max-width: 700px) {
+    .header .menu {
+      -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start; } }
+  .header .menu .toggle {
+    display: block;
+    height: 52px;
+    line-height: 52px;
+    text-align: right;
+    color: #f8f8f8;
+    text-decoration: none; }
+    @media screen and (min-width: 701px) {
+      .header .menu .toggle {
+        display: none; } }
+  .header .menu nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media screen and (max-width: 700px) {
+      .header .menu nav {
+        background-color: #000;
+        margin-top: -4px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .header .menu nav.toggleMenu {
+          display: none; } }
+    .header .menu nav a {
+      display: block;
+      text-decoration: none;
+      padding: 16px;
+      color: #9e9e9e;
+      margin-left: 4px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .header .menu nav a:hover {
+        color: #f8f8f8; }
 
 .about {
   display: -webkit-box;
@@ -64,19 +94,36 @@ body {
   align-items: center;
   background-color: #000000;
   padding: 56px 0 32px 0; }
+  @media screen and (max-width: 480px) {
+    .about {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .about .profileImg {
     height: 90vh;
+    max-height: 600px;
     width: 40vw;
     background-image: url(../img/wenchien.jpg);
     background-position: center center;
     background-size: cover;
     border-radius: 0 0 20px 0; }
+    @media screen and (max-width: 480px) {
+      .about .profileImg {
+        max-height: 400px;
+        width: 90vw; } }
   .about .description {
     padding: 32px; }
+    @media screen and (max-width: 480px) {
+      .about .description {
+        margin-top: -286px; } }
     .about .description h2 {
       font-size: 60px;
       color: #f8f8f8;
       margin-bottom: 16px; }
+      @media screen and (max-width: 480px) {
+        .about .description h2 {
+          height: 256px; } }
     .about .description p {
       margin-bottom: 8px; }
 
@@ -87,40 +134,49 @@ body {
     list-style: none;
     margin: 32px auto;
     width: 0;
-    border-right: 1px #9e9e9e solid; }
-    .experience .lineLists li {
-      width: 300px; }
-      .experience .lineLists li::before {
-        content: "";
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background-color: #00A29A;
-        background: -webkit-linear-gradient(135deg, #00a248 0%, #00a29a 100%);
-        background: -o-linear-gradient(135deg, #00a248 0%, #00a29a 100%);
-        background: linear-gradient(-45deg, #00a248 0%, #00a29a 100%);
-        border-radius: 10px;
-        position: relative;
-        margin-right: -20px; }
-      .experience .lineLists li:nth-child(odd) {
+    border-left: 1px #9e9e9e solid; }
+    @media screen and (max-width: 1024px) {
+      .experience .lineLists {
+        width: 80%; } }
+    .experience .lineLists li::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: #00A29A;
+      background: -webkit-linear-gradient(135deg, #00a248 0%, #00a29a 100%);
+      background: -o-linear-gradient(135deg, #00a248 0%, #00a29a 100%);
+      background: linear-gradient(-45deg, #00a248 0%, #00a29a 100%);
+      border-radius: 10px;
+      position: relative;
+      margin-right: -20px; }
+    @media screen and (max-width: 1024px) {
+      .experience .lineLists li {
         padding-left: 24px; }
-        .experience .lineLists li:nth-child(odd)::before {
-          left: -33px; }
-      .experience .lineLists li:nth-child(even) {
-        padding-right: 24px;
-        position: relative;
-        left: -324px; }
-        .experience .lineLists li:nth-child(even)::before {
-          right: -314px; }
-      .experience .lineLists li .list {
-        font-size: .875rem; }
-        .experience .lineLists li .list::before {
-          content: "．"; }
-      .experience .lineLists li .whatIDo {
-        margin-top: 4px;
-        padding-top: 4px;
-        border-top: 1px #313131 solid;
-        color: #f8f8f8; }
+        .experience .lineLists li::before {
+          left: -33px; } }
+    @media screen and (min-width: 1025px) {
+      .experience .lineLists li {
+        width: 300px; }
+        .experience .lineLists li:nth-child(odd) {
+          padding-left: 24px; }
+          .experience .lineLists li:nth-child(odd)::before {
+            left: -33px; }
+        .experience .lineLists li:nth-child(even) {
+          padding-right: 24px;
+          position: relative;
+          left: -324px; }
+          .experience .lineLists li:nth-child(even)::before {
+            right: -314px; } }
+    .experience .lineLists li .list {
+      font-size: .875rem; }
+      .experience .lineLists li .list::before {
+        content: "．"; }
+    .experience .lineLists li .whatIDo {
+      margin-top: 4px;
+      padding-top: 4px;
+      border-top: 1px #313131 solid;
+      color: #f8f8f8; }
 
 .portfolio {
   background-color: #000000;
@@ -148,6 +204,12 @@ body {
       -webkit-transition: .3s ease-in-out;
       -o-transition: .3s ease-in-out;
       transition: .3s ease-in-out; }
+      @media screen and (max-width: 800px) {
+        .portfolio .projectList .project {
+          width: 44%; } }
+      @media screen and (max-width: 480px) {
+        .portfolio .projectList .project {
+          width: 90%; } }
       .portfolio .projectList .project:hover {
         position: relative;
         top: -6px;

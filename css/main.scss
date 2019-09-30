@@ -50,15 +50,41 @@ body{
     h1{
         font-size: 1rem;
     }
-    nav{
-        a{
+    .menu{
+        @media screen and (max-width:700px){
+            align-self: start;
+        }
+        .toggle{
+            display: block;
+            height: 52px;
+            line-height: 52px;
+            text-align: right;
+            color: $gray-100;
             text-decoration: none;
-            padding: $unit-4x;
-            color: $gray-200;
-            margin-left: $unit;
-            transition: .3s;
-            &:hover{
-                color:$gray-100;
+            @media screen and (min-width:701px){
+                display: none;
+            }
+        }
+        nav{
+            display: flex;
+            @media screen and (max-width:700px) {
+                background-color: #000;
+                margin-top: -4px;
+                flex-direction: column;
+                &.toggleMenu{
+                    display: none;
+                }
+            }
+            a{
+                display: block;
+                text-decoration: none;
+                padding: $unit-4x;
+                color: $gray-200;
+                margin-left: $unit;
+                transition: .3s;
+                &:hover{
+                    color:$gray-100;
+                }
             }
         }
     }
@@ -78,20 +104,34 @@ body{
     justify-content: start;
     align-items: center;
     @include box-basic;
+    @media screen and (max-width:480px){
+        flex-direction: column;
+    }
     .profileImg{
         height: 90vh;
+        max-height: 600px;
         width: 40vw;
         background-image: url(../img/wenchien.jpg);
         background-position: center center;
         background-size: cover;
         border-radius: 0 0 20px 0;
+        @media screen and (max-width:480px){
+            max-height: 400px;
+            width: 90vw;
+        }
     }
     .description{
         padding: $unit-8x;
+        @media screen and (max-width:480px) {
+            margin-top: -286px;
+        }
         h2{
             font-size: 60px;
             color:$gray-100;
             margin-bottom: $unit-4x;
+            @media screen and (max-width:480px){
+                height: 256px;
+            }
         }
         p{
             margin-bottom: $unit-2x;
@@ -104,9 +144,11 @@ body{
         list-style: none;
         margin: $unit-8x auto;
         width: 0;
-        border-right: 1px $gray-200 solid;
+        border-left: 1px $gray-200 solid;
+        @media screen and (max-width:1024px){
+            width: 80%;
+        }
         li{
-            width: 300px;
             &::before{
                 content: "";
                 display: inline-block;
@@ -118,18 +160,27 @@ body{
                 position: relative;
                 margin-right: -20px;
             }
-            &:nth-child(odd){
+            @media screen and (max-width:1024px){
                 padding-left: $unit-6x;
                 &::before{
                     left: -33px;
                 }
             }
-            &:nth-child(even){
-                padding-right: $unit-6x;
-                position: relative;
-                left: -324px;
-                &::before{
-                    right: -314px;
+            @media screen and (min-width:1025px){
+                width: 300px;
+                &:nth-child(odd){
+                    padding-left: $unit-6x;
+                    &::before{
+                        left: -33px;
+                    }
+                }
+                &:nth-child(even){
+                    padding-right: $unit-6x;
+                    position: relative;
+                    left: -324px;
+                    &::before{
+                        right: -314px;
+                    }
                 }
             }
             .list{
@@ -165,6 +216,12 @@ body{
             position: relative;
             top: 0;
             transition: .3s ease-in-out;
+            @media screen and (max-width:800px){
+                width: 44%;
+            }
+            @media screen and (max-width:480px){
+                width: 90%;
+            }
             &:hover{
                 position: relative;
                 top:-6px;

@@ -36,18 +36,27 @@
                     scrollTop: $("#awards").offset().top
                 }, 1000);
             });
+            $(".toggle").click(function(){
+                $("#menu").toggleClass('toggleMenu');
+            });
+            $("#menu").click(function(){
+                $(this).toggleClass('toggleMenu');
+            });
         });
     </script>
 </head>
 <body>
     <div class="header">
         <h1>Wen Chien Lee</h1>
-        <nav>
-            <a id="toAbout" href="javascript:;">ABOUT ME</a>
-            <a id="toEx" href="javascript:;">EXPERIENCE</a>
-            <a id="toPortfolio" href="javascript:;">PROJECTS</a>
-            <a id="toAwards" href="javascript:;">AWARDS</a>
-        </nav>
+        <div class="menu">
+            <a href="javascript:;" class="toggle">MENU</a>
+            <nav id="menu" class="toggleMenu">
+                <a id="toAbout" href="javascript:;">ABOUT ME</a>
+                <a id="toEx" href="javascript:;">EXPERIENCE</a>
+                <a id="toPortfolio" href="javascript:;">PROJECTS</a>
+                <a id="toAwards" href="javascript:;">AWARDS</a>
+            </nav>
+        </div>
     </div>
     <div class="about" id="about">
         <div class="profileImg"></div>
@@ -109,47 +118,68 @@
         <h3>PROJECTS</h3>
         <div class="projectList">
             <div class="project">
-                <img src="img/chatroom.jpg" alt="chatroom">
-                <h4>Chatroom app</h4>
+                <img src="img/chatroom.jpg" alt="Anonymous-Chatting-Room">
+                <h4>Chat Planet</h4>
                 <p class="subtitle">9 weeks challenge</p>
                 <p class="des">An anonymous chatting room.</p>
-                <a class="btn" href="https://www.behance.net/gallery/85965725/Anonymous-Chatting-Room" target="_blank" alt="chatroom" title="link to behance">DETAIL</a>
+                <a class="btn" href="https://www.behance.net/gallery/85965725/Anonymous-Chatting-Room" target="_blank" alt="Anonymous-Chatting-Room" title="link to behance">BEHANCE</a>
             </div>
             <div class="project">
-                <img src="img/chatroom.jpg" alt="chatroom">
-                <h4>Chatroom app</h4>
+                <img src="img/note.png" alt="Double-mode-Note-app">
+                <h4>Double mode Note app</h4>
                 <p class="subtitle">9 weeks challenge</p>
-                <p class="des">An anonymous chatting room.</p>
-                <a class="btn" href="https://www.behance.net/gallery/85965725/Anonymous-Chatting-Room" target="_blank" alt="chatroom" title="link to behance">DETAIL</a>
+                <p class="des">An note app.</p>
+                <a class="btn" href="https://www.behance.net/gallery/86102587/Double-mode-Note-app" target="_blank" alt="Double-mode-Note-app" title="link to behance">BEHANCE</a>
             </div>
             <div class="project">
-                <img src="img/chatroom.jpg" alt="chatroom">
-                <h4>Chatroom app</h4>
+                <img src="img/room.png" alt="Book-a-room-online">
+                <h4>Nature space</h4>
                 <p class="subtitle">9 weeks challenge</p>
-                <p class="des">An anonymous chatting room.</p>
-                <a class="btn" href="https://www.behance.net/gallery/85965725/Anonymous-Chatting-Room" target="_blank" alt="chatroom" title="link to behance">DETAIL</a>
+                <p class="des">Booking a room online.</p>
+                <a class="btn" href="https://www.behance.net/gallery/85710275/Book-a-room-online" target="_blank" alt="Book-a-room-online" title="link to behance">BEHANCE</a>
             </div>
             <div class="project">
-                    <img src="img/chatroom.jpg" alt="chatroom">
-                    <h4>Chatroom app</h4>
+                    <img src="img/pay.png" alt="Pay-online">
+                    <h4>Payment system (RWD)</h4>
                     <p class="subtitle">9 weeks challenge</p>
-                    <p class="des">An anonymous chatting room.</p>
-                    <a class="btn" href="https://www.behance.net/gallery/85965725/Anonymous-Chatting-Room" target="_blank" alt="chatroom" title="link to behance">DETAIL</a>
-                </div>
-                <div class="project">
-                    <img src="img/chatroom.jpg" alt="chatroom">
-                    <h4>Chatroom app</h4>
-                    <p class="subtitle">9 weeks challenge</p>
-                    <p class="des">An anonymous chatting room.</p>
-                    <a class="btn" href="https://www.behance.net/gallery/85965725/Anonymous-Chatting-Room" target="_blank" alt="chatroom" title="link to behance">DETAIL</a>
-                </div>
-                <div class="project">
-                    <img src="img/chatroom.jpg" alt="chatroom">
-                    <h4>Chatroom app</h4>
-                    <p class="subtitle">9 weeks challenge</p>
-                    <p class="des">An anonymous chatting room.</p>
-                    <a class="btn" href="https://www.behance.net/gallery/85965725/Anonymous-Chatting-Room" target="_blank" alt="chatroom" title="link to behance">DETAIL</a>
-                </div>
+                    <p class="des">An RWD page for pay online.</p>
+                    <a class="btn" href="https://www.behance.net/gallery/85657635/Pay-online" target="_blank" alt="Pay-online" title="link to behance">BEHANCE</a>
+            </div>
+            <div class="project">
+                <img src="img/drive.jpg" alt="ONLINE-HARD-DRIVE">
+                <h4>Your cloud</h4>
+                <p class="subtitle">9 weeks challenge</p>
+                <p class="des">An online hard drive.</p>
+                <a class="btn" href="https://www.behance.net/gallery/86022455/ONLINE-HARD-DRIVE" target="_blank" alt="ONLINE-HARD-DRIVE" title="link to behance">BEHANCE</a>
+            </div>
+            <div class="project">
+                <img src="img/tomato.png" alt="Tomato-Timer">
+                <h4>Tomato Timer</h4>
+                <p class="subtitle">9 weeks challenge</p>
+                <p class="des">An Tomato Timer.</p>
+                <a class="btn" href="https://www.behance.net/gallery/85654405/Tomato-Timer" target="_blank" alt="Tomato-Timer" title="link to behance">BEHANCE</a>
+            </div>
+            <div class="project">
+                <img src="img/game.png" alt="90s-game">
+                <h4>I want to go to company</h4>
+                <p class="subtitle">9 weeks challenge</p>
+                <p class="des">An 90 seconds game.</p>
+                <a class="btn" href="https://www.behance.net/gallery/85709213/90s-Game-I-want-to-go-to-company" target="_blank" alt="90s-game" title="link to behance">BEHANCE</a>
+            </div>
+            <div class="project">
+                <img src="img/play.png" alt="Mp3-Player">
+                <h4>Mp3 Player</h4>
+                <p class="subtitle">9 weeks challenge</p>
+                <p class="des">An Mp3 player.</p>
+                <a class="btn" href="https://www.behance.net/gallery/85655997/Mp3-Player" target="_blank" alt="Mp3-Player" title="link to behance">BEHANCE</a>
+            </div>
+            <div class="project">
+                <img src="img/puker.png" alt="Solitaire-redesign">
+                <h4>Solitaire</h4>
+                <p class="subtitle">9 weeks challenge</p>
+                <p class="des">Solitaire redesign.</p>
+                <a class="btn" href="https://www.behance.net/gallery/85655177/Solitaire-redesign" target="_blank" alt="Solitaire-redesign" title="link to behance">BEHANCE</a>
+            </div>
         </div>
     </div>
     <div class="awards" id="awards">
