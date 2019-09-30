@@ -20,6 +20,7 @@ body{
     font-weight: 100;
     letter-spacing: 1px;
     color: $gray-200;
+    background-color: $black;
     h3{
         text-align: center;
         color: $gray-100;
@@ -114,7 +115,7 @@ body{
         background-image: url(../img/wenchien.jpg);
         background-position: center center;
         background-size: cover;
-        border-radius: 0 0 20px 0;
+        border-radius: 0 0 40px 0;
         @media screen and (max-width:480px){
             max-height: 400px;
             width: 90vw;
@@ -216,7 +217,7 @@ body{
             position: relative;
             top: 0;
             transition: .3s ease-in-out;
-            @media screen and (max-width:800px){
+            @media screen and (max-width:900px){
                 width: 44%;
             }
             @media screen and (max-width:480px){
@@ -253,7 +254,4 @@ body{
             }
         }
     }
-}
-.awards{
-    @include box-basic;
 }
