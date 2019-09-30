@@ -155,20 +155,20 @@ body {
       .experience .lineLists li {
         padding-left: 24px; }
         .experience .lineLists li::before {
-          left: -33px; } }
+          left: -34px; } }
     @media screen and (min-width: 1025px) {
       .experience .lineLists li {
         width: 300px; }
         .experience .lineLists li:nth-child(odd) {
           padding-left: 24px; }
           .experience .lineLists li:nth-child(odd)::before {
-            left: -33px; }
+            left: -34px; }
         .experience .lineLists li:nth-child(even) {
           padding-right: 24px;
           position: relative;
           left: -324px; }
           .experience .lineLists li:nth-child(even)::before {
-            right: -314px; } }
+            right: -313px; } }
     .experience .lineLists li .list {
       font-size: .875rem; }
       .experience .lineLists li .list::before {

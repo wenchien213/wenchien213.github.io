@@ -164,7 +164,7 @@ body{
             @media screen and (max-width:1024px){
                 padding-left: $unit-6x;
                 &::before{
-                    left: -33px;
+                    left: -34px;
                 }
             }
             @media screen and (min-width:1025px){
@@ -172,7 +172,7 @@ body{
                 &:nth-child(odd){
                     padding-left: $unit-6x;
                     &::before{
-                        left: -33px;
+                        left: -34px;
                     }
                 }
                 &:nth-child(even){
@@ -180,7 +180,7 @@ body{
                     position: relative;
                     left: -324px;
                     &::before{
-                        right: -314px;
+                        right: -313px;
                     }
                 }
             }
