@@ -117,7 +117,8 @@ body {
         padding-left: 120px;
         border-left: 1px rgba(45, 45, 45, 0.2) solid;
         line-height: 2;
-        color: rgba(45, 45, 45, 0.9); }
+        color: rgba(45, 45, 45, 0.9);
+        font-size: 1.125em; }
       body .about .content .img {
         width: 60%; }
         body .about .content .img img {
