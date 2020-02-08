@@ -8,23 +8,50 @@ $link:#5dc1eb;
 $link-hover:#67d5d1;
 $gray-100:#ffffff;
 $gray-200:rgba(45,45,45,.2);
-$gray-500:#313131;
+$gray-600:rgba(45,45,45,.6);
+$gray-900:rgba(45,45,45,.9);
 $black:#000000;
 $gray-bg:#F4F4F4;
 
 $max-screen:1280px;
 
+@mixin boxPadding{
+    padding: 100px 0 170px 0;
+    @media screen and (max-width: 700px){
+        padding: 60px 0 130px 0;
+    }
+}
+@mixin boxBorder{
+    border-radius: 70px 70px 0 0;
+    @media screen and (max-width: 700px){
+        border-radius: 70px 0 0 0;
+    }
+}
+
 body{
     font-family: "Noto Sans TC script=all rev=1";
     font-weight: 200;
     letter-spacing: 1px;
+    font-size: 14px;
+    .wrapper{
+        overflow: hidden;
+    }
     h1{
-        font-size: 3.75rem;
+        font-size: 3.75em;
         font-weight: 100;
         color: $gray-100;
         text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
         span{
             font-weight: 500;
+        }
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 80px;
+        font-size: 1.875em;
+        font-weight: 400;
+        @media screen and (max-width: 700px){
+            margin-bottom: 40px;
         }
     }
     a{
@@ -37,15 +64,25 @@ body{
     }
     .container{
         max-width: $max-screen;
+        width: 70%;
         margin-right: auto;
         margin-left: auto;
+        @media screen and (max-width: 700px){
+            width: 90%;
+        }
+
     }
     .header{
         .menu{
             float: right;
             padding: 10px;
+            margin-right: 10%;
+            margin-top: 2%;
+            @media screen and (max-width: 700px){
+                margin-right: 2%;
+            }
             .switch{
-                font-size: 1rem;
+                font-size: 1em;
                 a{
                     text-decoration: none;
                     color: $gray-100;
@@ -55,6 +92,7 @@ body{
                     background-color: rgba(255,255,255,0);
                     transition: .4s;
                     &.on{
+                        cursor: default;
                         &:after{
                             content: "";
                             width: 40px;
@@ -85,14 +123,14 @@ body{
         .content{
             max-width: 966px;
             margin: 0 auto;
-            padding: 100px 0 170px 0;
+            @include boxPadding;
         }
     }
     .about{
-        border-radius: 70px 70px 0 0;
         background-color: $gray-100;
-        padding: 100px 0 170px 0;
         margin-bottom: -70px;
+        @include boxPadding;
+        @include boxBorder;
         .content{
             max-width: 966px;
             display: flex;
@@ -102,7 +140,29 @@ body{
                 padding-left: 120px;
                 border-left: 1px $gray-200 solid;
                 line-height: 2;
-                color: $gray-500;
+                color: $gray-900;
+            }
+            .img{
+                width: 60%;
+                img{
+                    max-width: 100%;
+                }
+            }
+            @media screen and (max-width: 800px){
+                flex-flow: column;
+                .des{
+                    margin-left: 0;
+                    padding-left: 0;
+                    border: none;
+                }
+                .img{
+                    max-width: 50%;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    img{
+                        max-width: 100%;
+                    }
+                }
             }
         }
         .link-group{
@@ -114,8 +174,11 @@ body{
                 list-style: none;
                 justify-content: space-around;
                 padding-top: 80px;
-                font-size: 2.5rem;
+                @media screen and (max-width: 800px){
+                    width: 80%;
+                }
                 li{
+                    font-size: 26px;
                     a{
                         top:0px;
                         &:hover{
@@ -129,10 +192,255 @@ body{
     }
     .exp{
         background-color: $gray-bg;
-        border-radius: 70px 70px 0 0;
-        padding: 100px 0 170px 0;
         margin-bottom: -70px;
-        h2{
+        @include boxPadding;
+        @include boxBorder;
+        .expList{
+            margin-bottom: 80px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .title{
+                &::before{
+                    content: "";
+                    display: inline-block;
+                    background: $link;
+                    background: $main;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 100px;
+                    margin-right: 20px;
+                    @media screen and (max-width: 700px){
+                        margin-bottom: 10px;
+                        width: 40px;
+                        height: 8px;
+                    }
+                }
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    @media screen and (max-width: 700px){
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                h3{
+                    font-size: 1.25em;
+                    color: $black;
+                    margin-right: 20px;
+                }
+                h4{
+                    font-size: 1em;
+                    color: $gray-900;
+                    font-weight: 200;
+                }
+            }
+            .job{
+                padding-left: 60px;
+                .list{
+                    color: $gray-600;
+                    margin-bottom: 20px;
+                }
+                .des{
+                    margin-left: -20px;
+                    margin-bottom: 20px;
+                }
+                .project{
+                    list-style: none;
+                    display: flex;
+                    margin-left: -20px;
+                    @media screen and (max-width: 700px){
+                        flex-direction: column;
+                    }
+                    li{
+                        margin-right: 20px;
+                        @media screen and (max-width: 700px){
+                            margin-right: 0;
+                            margin-bottom: 20px;
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            padding: 14px 16px;
+                            background-color: $gray-100;
+                            border-radius: 8px;
+                            box-shadow: 1px 2px 6px $gray-200;
+                            transition: .4s;
+                            @media screen and (max-width: 900px){
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                            &:hover{
+                                box-shadow: 1px 2px 6px $gray-600;
+                            }
+                            img{
+                                width: 170px;
+                                margin-right: 16px;
+                                @media screen and (max-width: 900px){
+                                    max-width: 100%;
+                                    margin-right: 0;
+                                    margin-bottom: 16px;
+                                }
+                            }
+                            span{
+                                color: $gray-900;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .learn{
+        background-color: $gray-100;
+        margin-bottom: -70px;
+        @include boxPadding;
+        @include boxBorder;
+        .uiDesign{
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px;
+            @media screen and (max-width: 700px){
+                flex-direction: column;
+            }
+            .img{
+                width: 60%;
+                img{
+                    width: 150%;
+                    position: relative;
+                    right: 50%;
+                    @media screen and (max-width: 700px){
+                        width: 200%;
+                    }
+                }
+            }
+            .des{
+                width: 40%;
+                @media screen and (max-width: 700px){
+                    width: 90%;
+                }
+                .text{
+                    margin-bottom: 40px;
+                    color: $gray-600;
+                    line-height: 2;
+                }
+                .btn{
+                    display: block;
+                    width: 80%;
+                    max-width: 330px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    color: $gray-100;
+                    font-size: 1.375em;
+                    font-weight: 400;
+                    border-radius: 100px;
+                    background: $link;
+                    background: $main;
+                    @media screen and (max-width: 700px){
+                        margin: 0 auto;
+                    }
+                    &:hover{
+                        box-shadow: 1px 2px 6px $gray-200;
+                    }
+                }
+            }
+        }
+        .active{
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: 700px){
+                flex-direction: column-reverse;
+            }
+            .des{
+                color: $gray-600;
+                width: 40%;
+                line-height: 2;
+                @media screen and (max-width: 700px){
+                    width: 90%;
+                }
+            }
+            .pic{
+                width: 60%;
+                margin-left: 60px;
+                @media screen and (max-width: 700px){
+                    width: 110%;
+                    margin-left: 0;
+                    margin-bottom: 20px;
+                }
+                img{
+                    max-width: 100%;
+                    border-radius: 200px 0 0 200px;
+                    opacity: .9;
+                    @media screen and (max-width: 700px){
+                        border-radius: 70px 70px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    .award{
+        background-color: $gray-bg;
+        @include boxPadding;
+        @include boxBorder;
+        .content{
+            display: flex;
+            align-items: flex-end;
+            @media screen and (max-width: 700px){
+                flex-direction: column;
+                align-items: center;
+            }
+            .awards{
+                width: 120%;
+                margin-right: 80px;
+                list-style: none;
+                @media screen and (max-width: 700px){
+                    width: 102%;
+                    margin-right: 0;
+                }
+                li{
+                    margin-bottom: 40px;
+                    h3{
+                        font-weight: 300;
+                        line-height: 2;
+                        margin-bottom: 8px;
+                        span{
+                            padding: 4px;
+                            border-radius: 4px;
+                            background: $link;
+                            background: $main;
+                            color: $gray-100;
+                            font-weight: 500;
+                            margin-right: 8px;
+                        }
+                    }
+                    .des{
+                        color: $gray-600;
+                        @media screen and (max-width: 700px){
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .img{
+                width: 40%;
+                @media screen and (max-width: 700px){
+                    width: 80%;
+                    margin-top: 20px;
+                }
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    .footer{
+        background: $link;
+        background: $main;
+        padding: 10px;
+        .copyright{
+            font-size: 0.625em;
+            color: $gray-100;
             text-align: center;
         }
     }
