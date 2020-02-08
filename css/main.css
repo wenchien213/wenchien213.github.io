@@ -377,7 +377,7 @@ body {
           opacity: .9; }
           @media screen and (max-width: 700px) {
             body .learn .active .pic img {
-              border-radius: 70px 70px 0 0; } }
+              border-radius: 0; } }
   body .award {
     background-color: #F4F4F4;
     padding: 100px 0 170px 0;
