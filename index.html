@@ -3,271 +3,208 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Wen Chien</title>
+    <title>Wen Chien｜文茜</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="About Wen Chien and her projects">
+    <meta name="description" content="文茜的相關經歷及作品">
     <meta property="og:title" content="Wen Chien's profile">
     <meta content="img/metaImage.jpg" data-react-helmet="true" property="og:image">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png" />
+    <script src="https://kit.fontawesome.com/edc9cffbb3.js" crossorigin="anonymous"></script>
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
-        $(document).ready(function (){
-            $("#toAbout").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#about").offset().top
-                }, 1000);
-            });
-            $("#toEx").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#ex").offset().top
-                }, 1000);
-            });
-            $("#toPortfolio").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#por").offset().top
-                }, 1000);
-            });
-            $("#toAwards").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#awards").offset().top
-                }, 1000);
-            });
-            $(".toggle").click(function(){
-                $("#menu").toggleClass('toggleMenu');
-            });
-            $("#menu").click(function(){
-                $(this).toggleClass('toggleMenu');
-            });
-        });
     </script>
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
-            <h1>Wen Chien Lee</h1>
-            <div class="menu">
-                <a href="javascript:;" class="toggle">MENU</a>
-                <nav id="menu" class="toggleMenu">
-                    <a id="toAbout" href="javascript:;">ABOUT ME</a>
-                    <a id="toEx" href="javascript:;">EXPERIENCE</a>
-                    <a id="toPortfolio" href="javascript:;">PROJECTS</a>
-                    <a id="toAwards" href="javascript:;">AWARDS</a>
-                </nav>
-            </div>
-        </div>
-        <div class="about" id="about">
-            <div class="profileImg wow fadeInLeft"></div>
-            <section class="description wow fadeInRight" data-wow-duration="1s">
-                <h2>WEN CHIEN LEE</h2>
-                <p>I have over 3 years experiences in Apparel design and E-commerce UI / Flow design.</p>
-                <p>More than 2 years experiences in website design (contractors platform) since 2016.</p>
-                <p>Good at HTML / CSS and wireflow / UI design.</p>
-                <p>I like easy atmosphere, great teamwork and open discussion.</p>
-                <p>As a user interface designer, I can assist front-end engineer with html and CSS, and also help PM planning user journey.</p>
-                <p>I'm very willing to understand users to inspire many new ideas for improving user experience.</p>
-            </section>
-        </div>
-        <div class="experience" id="ex">
-            <h3>EXPERIENCE</h3>
-            <ul class="lineLists">
-                <li class="wow fadeInRight">
-                    <h4>UI Designer</h4>
-                    <p class="subtitle">Taiwan 104 corp．Dec 2016 - Now</p>
-                    <p class="list">Developing new RWD projects in UIUX, html/CSS(React), git</p>
-                    <p class="list">Defining the design guideline of new projects</p>
-                    <p class="list">Planning UI flow and function map for new projects in collaboration with PM</p>
-                    <p class="list">Liaising with PM and engineers</p>
-                    <p class="list">Supporting old project in html and css</p>
-                    <p class="whatIDo">I import Invision and Zeplin、sketch to make team work more efficient. And increase page rate by 10% and increase conversion rate by 1% in one month.</p>
-                </li>
-                <li class="wow fadeInLeft">
-                    <h4>Web Designer</h4>
-                    <p class="subtitle">Addcn corp．Feb 2013 - Nov 2016</p>
-                    <p class="list">Designed the UI / html / CSS of the official website (desktop and mobile sites)</p>
-                    <p class="list">Planned official blog (RWD)</p>
-                    <p class="list">Created and operated Event event pages and activity banners</p>
-                    <p class="list">Supported SEO</p>
-                    <p class="list">Product photography</p>
-                    <p class="whatIDo">Completed the RWD blog, including planning, design, HTML / CSS. Worked with the team to implement the official website revision.</p>
-                </li>
-                <li class="wow fadeInRight">
-                    <h4>Fashion Designer</h4>
-                    <p class="subtitle">Levon outdoor．May 2012 - Jun 2013</p>
-                    <p class="whatIDo">Supported official website information update.</p>
-                </li>
-                <li class="wow fadeInLeft">
-                    <h4>Design Assistant</h4>
-                    <p class="subtitle">JZ clothes．Sep 2010 - May 2012</p>
-                </li>
-            </ul>
-            <h3>EDUCATION</h3>
-            <ul class="lineLists">
-                <li class="wow fadeInRight">
-                    <h4>Shih Chien University</h4>
-                    <p class="subtitle">2006~2010</p>
-                    <p class="subtitle">Department of Fashion Design and Merchandising</p>
-                    <p class="subtitle">Degree: Bachelor of Arts</p>
-                    <p class="whatIDo">Grade: Top 1%</p>
-                </li>
-            </ul>
-        </div>
-        <div class="portfolio" id="por">
-            <h3>PROJECTS</h3>
-            <div class="projectList">
-                <div class="project wow fadeInUp">
-                    <img src="img/project-newCase.jpg" alt="104 Top Case">
-                    <h4>104 Top Case</h4>
-                    <p class="subtitle">104 corp</p>
-                    <p class="des">We help company to find freelancers.</p>
-                    <a class="btn" href="https://top.104.com.tw/marketing/" target="_blank" alt="104 Top Case" title="link to 104 Top Case">104 TOP CASE</a>
-                </div>
-                <div class="project wow fadeInUp">
-                    <img src="img/project-manegement.jpg" alt="Management system">
-                    <h4>Management system</h4>
-                    <p class="subtitle">104 corp</p>
-                    <p class="des">We assist managers in managing cases.</p>
-                    <a class="btn" href="https://docs.google.com/presentation/d/1z4WJa6p9fYMGBZLmEoGcl7hhXnWr4Iy-WcG8DmtolEI/edit?usp=sharing" target="_blank" alt="Management system" title="see detail">DETAIL</a>
-                </div>
-                <div class="project wow fadeInUp">
-                    <img src="img/project-blog.jpg" alt="101 T-shirts">
-                    <h4>101 T-shirts - RWD blog</h4>
-                    <p class="subtitle">Addcn corp</p>
-                    <p class="des">My first RWD project.</p>
-                    <a class="btn" href="https://www.101.com.tw/blog-listingPage.html" target="_blank" alt="101 T-shirts" title="link to 101 blog">101 BLOG</a>
-                </div>
-                <div class="project wow fadeInUp">
-                    <img src="img/project-101.jpg" alt="101 T-shirts">
-                    <h4>101 T-shirts</h4>
-                    <p class="subtitle">Addcn corp</p>
-                    <p class="des">An E-commerce platform.</p>
-                    <a class="btn" href="https://www.101.com.tw/" target="_blank" alt="101 T-shirts" title="link to 101.com">101 T-SHIRTS</a>
+        <div class="top">
+            <div class="header">
+                <div class="menu wow fadeInDown">
+                    <nav class="switch">
+                        <a class="on" href="#">中文</a>
+                        <a class="" href="/index-en.html">ENGLISH</a>
+                    </nav>
                 </div>
             </div>
-            <h3>SIDE PROJECTS</h3>
-            <div class="projectList">
-                <div class="project wow fadeInUp">
-                    <img src="img/chatroom.jpg" alt="Anonymous-Chatting-Room">
-                    <h4>Chat Planet</h4>
-                    <p class="subtitle">9 weeks challenge of 2019</p>
-                    <p class="des">An anonymous chatting room.</p>
-                    <a class="btn" href="https://www.behance.net/gallery/85965725/Anonymous-Chatting-Room" target="_blank" alt="Anonymous-Chatting-Room" title="link to behance">BEHANCE</a>
+            <div class="container content">
+                <h1>I’M <span>WEN CHIEN</span><br>
+                我是 <span>文茜</span></h1>
+            </div>
+        </div>
+        <div class="about">
+            <div class="container content">
+                <div class="img wow fadeInUp">
+                    <img src="/img/wenchien.png" alt="myPhoto">
                 </div>
-                <div class="project wow fadeInUp">
-                    <img src="img/note.png" alt="Double-mode-Note-app">
-                    <h4>Double mode Note app</h4>
-                    <p class="subtitle">9 weeks challenge of 2019</p>
-                    <p class="des">An note app.</p>
-                    <a class="btn" href="https://www.behance.net/gallery/86102587/Double-mode-Note-app" target="_blank" alt="Double-mode-Note-app" title="link to behance">BEHANCE</a>
+                <div class="des wow fadeInUp">
+                    <p>我擁有三年以上的電商平台維運經驗，除了網站規劃，也負責商品拍攝及HTML/CSS撰寫，並與工程師協作順利！</p>
+                    <p>從2016年底至今，我在104負責新產品的開發，在團隊中擔任UI設計師。除了本職介面規劃外，我尤善於釐清邏輯，總是能迅速抓到商模中的不合理及提出更佳的使用者體驗提案。</p>
+                    <p>2019年主動提出加入人力銀行的使用者訪談活動，觀察研究員們是如何與受訪者溝通及可留意的細節；為了更貼近使用者，我自主規劃走廊攔訪並整理成表格及數據反饋給團隊！</p>
+                    <br>
+                    <p>2018至2019年間兩度參與痞客邦鐵人自我挑戰賽及前端精神時光屋都順利完賽！</p>
+                    <p>我在2018年加入了公司的志工老師計劃，到學校分享我的工作內容和職涯，幫助孩童們找到自己喜歡的職涯走向！同時，也在2019年加入IxDA組織，積極參與各種外部工作坊及分享講座，是一個樂於分享且自律好學的人！</p>
+                    <br>
+                    <p>聯繫信箱：<a href="mailto:wenchien0213@gmail.com" title="聯繫我">wenchien0213@gmail.com</a></p>
                 </div>
-                <div class="project wow fadeInUp">
-                    <img src="img/room.png" alt="Book-a-room-online">
-                    <h4>Nature space</h4>
-                    <p class="subtitle">9 weeks challenge of 2019</p>
-                    <p class="des">Booking a room online.</p>
-                    <a class="btn" href="https://www.behance.net/gallery/85710275/Book-a-room-online" target="_blank" alt="Book-a-room-online" title="link to behance">BEHANCE</a>
+            </div>
+            <div class="link-group">
+                <ul>
+                    <li><a href="https://dribbble.com/wenchien" target="_blank" title="Dribbble"><i class="fab fa-dribbble-square"></i></a></li>
+                    <li><a href="https://www.behance.net/wenchienlee" target="_blank" title="Behance"><i class="fab fa-behance-square"></i></a></li>
+                    <li><a href="https://www.facebook.com/LatteRabbitAndCoffeeBear" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://medium.com/@wenchien0213" target="_blank" title="Medium"><i class="fab fa-medium"></i></a></li>
+                    <li><a href="https://www.flickr.com/photos/136356688@N02/albums" target="_blank" title="Flickr"><i class="fab fa-flickr"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="exp">
+            <div class="container">
+                <h2>工作經歷/學歷</h2>
+                <div class="expList wow fadeInUp">
+                    <div class="title">
+                        <h3>介面視覺設計師</h3>
+                        <h4>104資訊科技．Dec 2016 - Now</h4>
+                    </div>
+                    <div class="job">
+                        <ul class="list">
+                            <li>規劃新產品的RWD版面流動、優化動線</li>
+                            <li>定義新產品的客製元件</li>
+                            <li>協助企劃釐清互動邏輯與工程邏輯</li>
+                            <li>擔任工程與企劃間的溝通橋樑</li>
+                            <li>支援舊產品維運工作，解決雙舊站彈出視窗PC及手機未統一問題，並協助後端製作前台頁面以達成視覺優化</li>
+                            <li>自主走廊攔訪並搜集反應及數據資料，提供這些資料來改善使用者體驗及行銷文案決議</li>
+                            <li>其他平面及網站、活動素材</li>
+                        </ul>
+                        <p class="des">為部門導入Invision與Zeplin、sketch...等開發工具，提升部門專案效率<br>協助改版，一個月內提升舊外包網10％轉換率</p>
+                        <ul class="project">
+                            <li>
+                                <a href="https://top.104.com.tw/" target="_blank">
+                                    <img src="/img/top.png" alt="104高手專案">
+                                    <span>104高手-外包、家教平台</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.google.com/presentation/d/1z4WJa6p9fYMGBZLmEoGcl7hhXnWr4Iy-WcG8DmtolEI/edit?usp=sharing" target="_blank">
+                                    <img src="/img/project-manegement.jpg" alt="104專案管理系統">
+                                    <span>104外包專案管理系統</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="project wow fadeInUp">
-                        <img src="img/pay.png" alt="Pay-online">
-                        <h4>Payment system (RWD)</h4>
-                        <p class="subtitle">9 weeks challenge of 2019</p>
-                        <p class="des">An RWD page for pay online.</p>
-                        <a class="btn" href="https://www.behance.net/gallery/85657635/Pay-online" target="_blank" alt="Pay-online" title="link to behance">BEHANCE</a>
+                <div class="expList wow fadeInUp">
+                    <div class="title">
+                        <h3>網頁設計師</h3>
+                        <h4>數字科技（101原創服飾）．Feb 2013 - Nov 2016</h4>
+                    </div>
+                    <div class="job">
+                        <ul class="list">
+                            <li>產品維運、官網改版</li>
+                            <li>獨立規劃RWD部落格專案，協助SEO優化</li>
+                            <li>製作活動頁及文宣、banner</li>
+                            <li>負責商品攝影、平拍</li>
+                            <li>行銷活動提案</li>
+                        </ul>
+                        <p class="des">從企劃、設計到切版、Facebook文案小編皆有涉略，與php工程師溝通無阻</p>
+                        <ul class="project">
+                            <li>
+                                <a href="https://www.101.com.tw/blog-listingPage.html" target="_blank">
+                                    <img src="/img/project-blog.jpg" alt="101原創官方部落格">
+                                    <span>101原創官方部落格</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="/img/project-101.jpg" alt="101原創服飾">
+                                    <span>101原創服飾</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="project wow fadeInUp">
-                    <img src="img/drive.jpg" alt="ONLINE-HARD-DRIVE">
-                    <h4>Your cloud</h4>
-                    <p class="subtitle">9 weeks challenge of 2019</p>
-                    <p class="des">An online hard drive.</p>
-                    <a class="btn" href="https://www.behance.net/gallery/86022455/ONLINE-HARD-DRIVE" target="_blank" alt="ONLINE-HARD-DRIVE" title="link to behance">BEHANCE</a>
-                </div>
-                <div class="project wow fadeInUp">
-                    <img src="img/tomato.png" alt="Tomato-Timer">
-                    <h4>Tomato Timer</h4>
-                    <p class="subtitle">9 weeks challenge of 2019</p>
-                    <p class="des">An Tomato Timer.</p>
-                    <a class="btn" href="https://www.behance.net/gallery/85654405/Tomato-Timer" target="_blank" alt="Tomato-Timer" title="link to behance">BEHANCE</a>
-                </div>
-                <div class="project wow fadeInUp">
-                    <img src="img/game.png" alt="90s-game">
-                    <h4>I want to go to company</h4>
-                    <p class="subtitle">9 weeks challenge of 2019</p>
-                    <p class="des">An 90 seconds game.</p>
-                    <a class="btn" href="https://www.behance.net/gallery/85709213/90s-Game-I-want-to-go-to-company" target="_blank" alt="90s-game" title="link to behance">BEHANCE</a>
-                </div>
-                <div class="project wow fadeInUp">
-                    <img src="img/play.png" alt="Mp3-Player">
-                    <h4>Mp3 Player</h4>
-                    <p class="subtitle">9 weeks challenge of 2019</p>
-                    <p class="des">An Mp3 player.</p>
-                    <a class="btn" href="https://www.behance.net/gallery/85655997/Mp3-Player" target="_blank" alt="Mp3-Player" title="link to behance">BEHANCE</a>
-                </div>
-                <div class="project wow fadeInUp">
-                    <img src="img/puker.png" alt="Solitaire-redesign">
-                    <h4>Solitaire</h4>
-                    <p class="subtitle">9 weeks challenge of 2019</p>
-                    <p class="des">Solitaire redesign.</p>
-                    <a class="btn" href="https://www.behance.net/gallery/85655177/Solitaire-redesign" target="_blank" alt="Solitaire-redesign" title="link to behance">BEHANCE</a>
+                <div class="expList wow fadeInUp">
+                    <div class="title">
+                        <h3>實踐大學</h3>
+                        <h4>2006 - 2010</h4>
+                    </div>
+                    <div class="job">
+                        <ul class="list">
+                            <li>服飾設計與經營學系．服飾設計組</li>
+                            <li>藝術學士</li>
+                        </ul>
+                        <p class="des">應屆特優等畢業</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="portfolio" id="awards">
-            <h3>AWARDS</h3>
-            <div class="projectList">
-                <div class="project wow fadeInUp">
-                    <img src="img/award1.jpg" alt="2018 9 weeks F2E challenge">
-                    <h4>2018 9 weeks F2E challenge</h4>
-                    <p class="subtitle">9 weeks challenge of 2019</p>
-                    <p class="des">F2E challenge for 9 weeks. Practicing Pug and SCSS and other skills of F2E.</p>
-                    <a class="btn" href="/2018F2EList.html" target="_self" alt="2018 9 weeks F2E challenge" title="open the list">CODEPEN LIST</a>
+        <div class="learn">
+            <div class="container">
+                <h2>自我學習與挑戰</h2>
+                <div class="uiDesign">
+                    <div class="img">
+                        <img src="/img/ui.png" alt="2019-UI挑戰">
+                    </div>
+                    <div class="des wow fadeInRight">
+                        <div class="text">
+                            <p>工作之餘，我善加利用平日晚上及週末的時間，透過閱讀、自我挑戰練習提升自己。</p>
+                            <br>
+                            <p>在2019年除了參加IT鐵人賽，也參加「前端精神時光屋-UI組」，連續九週除了依照需求規格發想流程、繪製設計稿，也與F2E組協作、交流，共同完成專案。</p>
+                        </div>
+                        <a class="btn" href="https://www.behance.net/wenchienlee" target="_blank">完整內容</a>
+                    </div>
                 </div>
-                <div class="project wow fadeInUp">
-                    <img src="img/award2.jpg" alt="30days IT article challenge">
-                    <h4>2018 30days IT article challenge</h4>
-                    <p class="subtitle">30days IT article challenge</p>
-                    <p class="des">To share not only how to work with engineers but knowledge in HTML/CSS.</p>
-                    <a class="btn" href="https://ithelp.ithome.com.tw/users/20112529/ironman/2059" target="_blank" alt="30days IT article challenge" title="open the list">ARTICLES LIST</a>
-                </div>
-                <div class="project wow fadeInUp">
-                    <img src="img/award3.jpg" alt="volunteer teacher">
-                    <h4>Certificate</h4>
-                    <p class="subtitle">volunteer teacher of 104 corp</p>
-                    <p class="des">To share what my career is for students of junior high school.</p>
+                <div class="active">
+                    <div class="des wow fadeInLeft">
+                        <p>除了閱讀與自我挑戰，透過工作坊、講座等方式，與同業互相交流、分享。2019受邀加入IxDA組織，經常與業界人士接軌，不斷學習成長、吸收新知。</p>
+                    </div>
+                    <div class="pic">
+                        <img src="/img/IXDAactive.jpg" alt="IxDA會員聚">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="portfolio" id="awards">
-            <h3>OTHERS</h3>
-            <div class="projectList">
-                <div class="project wow fadeInUp">
-                    <h4>Photography</h4>
-                    <p class="subtitle">Personal hobbies</p>
-                    <p class="des">I like to live with photography.</p>
-                    <a class="btn" href="https://www.flickr.com/photos/136356688@N02/albums" target="_blank" alt="Photography" title="my Photography">FLICKR</a>
-                </div>
-                <div class="project wow fadeInUp">
-                    <h4>Illustration</h4>
-                    <p class="subtitle">Personal hobbies</p>
-                    <p class="des">Latte Rabbit and Coffee Bear.</p>
-                    <a class="btn" href="https://www.facebook.com/LatteRabbitAndCoffeeBear/" target="_blank" alt="Latte Rabbit and Coffee Bear" title="open the link">FACEBOOK</a>
-                </div>
-                <div class="project wow fadeInUp">
-                    <h4>UI challenge in 2016</h4>
-                    <p class="subtitle">UI challenge</p>
-                    <p class="des">UI challenge.</p>
-                    <a class="btn" href="https://www.behance.net/gallery/74134383/UI-challenge-in-2016" target="_blank" alt="UI challenge" title="UI challenge">BEHANCE</a>
-                </div>
-                <div class="project wow fadeInUp">
-                    <h4>Medium</h4>
-                    <p class="subtitle">My articles</p>
-                    <p class="des">To share my opinions and life and what I learned.</p>
-                    <a class="btn" href="https://medium.com/@wenchien0213" target="_blank" alt="Medium" title="Medium">MEDIUM</a>
+        <div class="award">
+            <div class="container">
+                <h2>獎項</h2>
+                <div class="content">
+                    <ul class="awards">
+                        <li class="wow fadeInUp">
+                            <h3><span>2019</span>IT鐵人賽-自我挑戰組【挑戰成功】</h3>
+                            <p class="des">連續三十天不間斷每日發文，在每一個晚上絞盡腦汁，強制自己思考及撰文</p>
+                        </li>
+                        <li class="wow fadeInUp">
+                            <h3><span>2019</span>前端精神時光屋-UI組【挑戰成功】</h3>
+                            <p class="des">持續九週不間斷，每週一個小型專案發想，包含流程規劃及介面設計；隔一週由前端組執行專案並共同協作</p>
+                        </li>
+                        <li class="wow fadeInUp">
+                            <h3><span>2018</span>IT鐵人賽-自我挑戰組【挑戰成功】</h3>
+                            <p class="des">連續三十天不間斷每日發文，分享與前端工程師協作與專案執行的心路歷程</p>
+                        </li>
+                        <li class="wow fadeInUp">
+                            <h3><span>2018</span>前端精神時光屋-F2E組【挑戰成功】</h3>
+                            <p class="des">持續九週不間斷，依照需求做切版練習，期間熟悉了flex-box系統及SCSS</p>
+                        </li>
+                        <li class="wow fadeInUp">
+                            <h3><span>2018</span>104職涯志工老師</h3>
+                            <p class="des">到校分享職涯及職業介紹，為莘莘學子出一份，為莘莘學子出一份心力</p>
+                        </li>
+                        <li class="wow fadeInUp">
+                            <h3><span>2017</span>亞洲插畫大賞【入圍】</h3>
+                            <p class="des">自創角色「拿鐵兔和美式熊」獲得亞洲插畫年鑑入圍</p>
+                        </li>
+                    </ul>
+                    <div class="img">
+                        <img src="/img/award.png" alt="Awards">
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="footer">
+            <p class="copyright">Design by Wen Chien</p>
         </div>
     </div>
 </body>
