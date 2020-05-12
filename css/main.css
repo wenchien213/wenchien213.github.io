@@ -12,7 +12,7 @@ body {
   body .wrapper {
     overflow: hidden; }
   body h1 {
-    font-size: 3.75em;
+    font-size: 3.5em;
     font-weight: 100;
     color: #ffffff;
     text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2); }
@@ -23,10 +23,38 @@ body {
     text-align: center;
     margin-bottom: 80px;
     font-size: 1.875em;
-    font-weight: 400; }
-    @media screen and (max-width: 700px) {
-      body h2 {
-        margin-bottom: 40px; } }
+    font-weight: 400;
+    position: relative;
+    z-index: 0;
+    text-shadow: 1px 1px 2px #ffffff; }
+    body h2::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      background: -webkit-linear-gradient(335deg, #5dc1eb 7%, #71e9b6 81%);
+      background: -o-linear-gradient(335deg, #5dc1eb 7%, #71e9b6 81%);
+      background: linear-gradient(115deg, #5dc1eb 7%, #71e9b6 81%);
+      left: 41%;
+      top: -36px;
+      z-index: -1;
+      opacity: .8; }
+    @media screen and (min-width: 701px) {
+      body h2::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background: -webkit-linear-gradient(335deg, #5dc1eb 7%, #71e9b6 81%);
+        background: -o-linear-gradient(335deg, #5dc1eb 7%, #71e9b6 81%);
+        background: linear-gradient(115deg, #5dc1eb 7%, #71e9b6 81%);
+        left: 56%;
+        top: 38px;
+        z-index: -1; } }
   body a {
     color: #5dc1eb;
     text-decoration: none;
@@ -113,8 +141,8 @@ body {
       -ms-flex-align: center;
       align-items: center; }
       body .about .content .des {
-        margin-left: 120px;
-        padding-left: 120px;
+        margin-left: 80px;
+        padding-left: 80px;
         border-left: 1px rgba(45, 45, 45, 0.2) solid;
         line-height: 2;
         color: rgba(45, 45, 45, 0.9);
@@ -149,17 +177,30 @@ body {
       list-style: none;
       -ms-flex-pack: distribute;
       justify-content: space-around;
-      padding-top: 80px; }
+      padding-top: 20px; }
       @media screen and (max-width: 800px) {
         body .about .link-group ul {
           width: 80%; } }
       body .about .link-group ul li {
-        font-size: 26px; }
+        font-size: 26px;
+        margin: 0 4px; }
         body .about .link-group ul li a {
           top: 0px; }
           body .about .link-group ul li a:hover {
             position: relative;
             top: -2px; }
+    body .about .skills {
+      font-size: 12px;
+      list-style: none;
+      overflow: hidden;
+      margin: 20px 0; }
+      body .about .skills li {
+        float: left;
+        background-color: #F4F4F4;
+        color: #000000;
+        margin: 4px 8px 4px 0;
+        padding: 0 8px;
+        border-radius: 4px; }
   body .exp {
     background-color: #F4F4F4;
     margin-bottom: -70px;
@@ -218,68 +259,17 @@ body {
           font-weight: 200; }
       body .exp .expList .job {
         padding-left: 60px; }
+        body .exp .expList .job .jobTitle {
+          color: #000000;
+          font-weight: 500;
+          margin-bottom: 8px;
+          margin-left: -20px; }
         body .exp .expList .job .list {
           color: rgba(45, 45, 45, 0.6);
           margin-bottom: 20px; }
         body .exp .expList .job .des {
           margin-left: -20px;
           margin-bottom: 20px; }
-        body .exp .expList .job .project {
-          list-style: none;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          margin-left: -20px; }
-          @media screen and (max-width: 700px) {
-            body .exp .expList .job .project {
-              -webkit-box-orient: vertical;
-              -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-              flex-direction: column; } }
-          body .exp .expList .job .project li {
-            margin-right: 20px; }
-            @media screen and (max-width: 700px) {
-              body .exp .expList .job .project li {
-                margin-right: 0;
-                margin-bottom: 20px; } }
-            body .exp .expList .job .project li a {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center;
-              padding: 14px 16px;
-              background-color: #ffffff;
-              border-radius: 8px;
-              -webkit-box-shadow: 1px 2px 6px rgba(45, 45, 45, 0.2);
-              box-shadow: 1px 2px 6px rgba(45, 45, 45, 0.2);
-              -webkit-transition: .4s;
-              -o-transition: .4s;
-              transition: .4s; }
-              @media screen and (max-width: 900px) {
-                body .exp .expList .job .project li a {
-                  -webkit-box-orient: vertical;
-                  -webkit-box-direction: normal;
-                  -ms-flex-direction: column;
-                  flex-direction: column;
-                  -webkit-box-align: center;
-                  -ms-flex-align: center;
-                  align-items: center; } }
-              body .exp .expList .job .project li a:hover {
-                -webkit-box-shadow: 1px 2px 6px rgba(45, 45, 45, 0.6);
-                box-shadow: 1px 2px 6px rgba(45, 45, 45, 0.6); }
-              body .exp .expList .job .project li a img {
-                width: 170px;
-                margin-right: 16px; }
-                @media screen and (max-width: 900px) {
-                  body .exp .expList .job .project li a img {
-                    max-width: 100%;
-                    margin-right: 0;
-                    margin-bottom: 16px; } }
-              body .exp .expList .job .project li a span {
-                color: rgba(45, 45, 45, 0.9);
-                font-weight: 500; }
   body .learn {
     background-color: #ffffff;
     margin-bottom: -70px;
@@ -291,94 +281,80 @@ body {
     @media screen and (max-width: 700px) {
       body .learn {
         border-radius: 70px 0 0 0; } }
-    body .learn .uiDesign {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      margin-bottom: 60px; }
-      @media screen and (max-width: 700px) {
-        body .learn .uiDesign {
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column; } }
-      body .learn .uiDesign .img {
-        width: 60%; }
-        body .learn .uiDesign .img img {
-          width: 150%;
-          position: relative;
-          right: 50%; }
-          @media screen and (max-width: 700px) {
-            body .learn .uiDesign .img img {
-              width: 200%; } }
-      body .learn .uiDesign .des {
-        width: 40%; }
+    body .learn .fullImg {
+      max-width: 100%;
+      margin: 16px 0; }
+    body .learn .project {
+      list-style: none; }
+      body .learn .project li {
+        margin-bottom: 32px; }
         @media screen and (max-width: 700px) {
-          body .learn .uiDesign .des {
-            width: 90%; } }
-        body .learn .uiDesign .des .text {
-          margin-bottom: 40px;
-          color: rgba(45, 45, 45, 0.6);
-          line-height: 2; }
-        body .learn .uiDesign .des .btn {
-          display: block;
-          width: 80%;
-          max-width: 330px;
-          height: 60px;
-          line-height: 60px;
-          text-align: center;
-          color: #ffffff;
-          font-size: 1.375em;
-          font-weight: 400;
-          border-radius: 100px;
-          background: #5dc1eb;
-          background: -webkit-linear-gradient(335deg, #5dc1eb 7%, #71e9b6 81%);
-          background: -o-linear-gradient(335deg, #5dc1eb 7%, #71e9b6 81%);
-          background: linear-gradient(115deg, #5dc1eb 7%, #71e9b6 81%); }
-          @media screen and (max-width: 700px) {
-            body .learn .uiDesign .des .btn {
-              margin: 0 auto; } }
-          body .learn .uiDesign .des .btn:hover {
-            -webkit-box-shadow: 1px 2px 6px rgba(45, 45, 45, 0.2);
-            box-shadow: 1px 2px 6px rgba(45, 45, 45, 0.2); }
-    body .learn .active {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      @media screen and (max-width: 700px) {
-        body .learn .active {
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: reverse;
-          -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse; } }
-      body .learn .active .des {
-        color: rgba(45, 45, 45, 0.6);
-        width: 40%;
-        line-height: 2; }
-        @media screen and (max-width: 700px) {
-          body .learn .active .des {
-            width: 90%; } }
-      body .learn .active .pic {
-        width: 60%;
-        margin-left: 60px; }
-        @media screen and (max-width: 700px) {
-          body .learn .active .pic {
-            width: 110%;
-            margin-left: 0;
+          body .learn .project li {
+            margin-right: 0;
             margin-bottom: 20px; } }
-        body .learn .active .pic img {
-          max-width: 100%;
-          border-radius: 200px 0 0 200px;
-          opacity: .9; }
+        body .learn .project li a {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          padding: 14px 16px;
+          background-color: #ffffff;
+          border-radius: 8px;
+          -webkit-box-shadow: 0px 2px 24px rgba(45, 45, 45, 0.2);
+          box-shadow: 0px 2px 24px rgba(45, 45, 45, 0.2);
+          -webkit-transition: .2s ease-in;
+          -o-transition: .2s ease-in;
+          transition: .2s ease-in; }
           @media screen and (max-width: 700px) {
-            body .learn .active .pic img {
-              border-radius: 0; } }
+            body .learn .project li a {
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center; } }
+          body .learn .project li a:hover {
+            -webkit-box-shadow: 0px 2px 16px rgba(45, 45, 45, 0.6);
+            box-shadow: 0px 2px 16px rgba(45, 45, 45, 0.6); }
+          body .learn .project li a.locked {
+            -webkit-box-shadow: 0px 2px 4px #F4F4F4;
+            box-shadow: 0px 2px 4px #F4F4F4; }
+            body .learn .project li a.locked:hover {
+              -webkit-box-shadow: 0px 2px 4px #F4F4F4;
+              box-shadow: 0px 2px 4px #F4F4F4;
+              cursor: default; }
+          body .learn .project li a img {
+            max-width: 300px;
+            width: 40%;
+            margin-right: 16px; }
+            @media screen and (max-width: 700px) {
+              body .learn .project li a img {
+                max-width: 100%;
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 16px; } }
+          body .learn .project li a h3, body .learn .project li a p {
+            color: rgba(45, 45, 45, 0.9); }
+          body .learn .project li a h3 {
+            margin-bottom: 8px; }
+          @media screen and (max-width: 700px) {
+            body .learn .project li a .des {
+              width: 100%; } }
+          body .learn .project li a .skills {
+            font-size: 12px;
+            list-style: none;
+            overflow: hidden;
+            margin: 8px 0; }
+            body .learn .project li a .skills li {
+              float: left;
+              background-color: #F4F4F4;
+              color: #000000;
+              margin: 4px 8px 4px 0;
+              padding: 0 8px;
+              border-radius: 4px; }
   body .award {
     background-color: #F4F4F4;
     padding: 100px 0 170px 0;
