@@ -55,6 +55,9 @@ body {
         left: 56%;
         top: 38px;
         z-index: -1; } }
+  body h3 {
+    color: #000000;
+    font-size: 1rem; }
   body a {
     color: #5dc1eb;
     text-decoration: none;
@@ -65,7 +68,7 @@ body {
       color: #67d5d1; }
   body .container {
     max-width: 1280px;
-    width: 70%;
+    width: 80%;
     margin-right: auto;
     margin-left: auto; }
     @media screen and (max-width: 700px) {
@@ -115,7 +118,7 @@ body {
     background: linear-gradient(115deg, #5dc1eb 7%, #71e9b6 81%);
     margin-bottom: -70px; }
     body .top .content {
-      max-width: 966px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 100px 0 170px 0; }
       @media screen and (max-width: 700px) {
@@ -133,24 +136,25 @@ body {
       body .about {
         border-radius: 70px 0 0 0; } }
     body .about .content {
-      max-width: 966px;
+      max-width: 1200px;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
+      display: flex; }
+      body .about .content h3 {
+        border-bottom: 1px solid rgba(45, 45, 45, 0.2);
+        padding-bottom: 8px;
+        margin-bottom: 8px; }
       body .about .content .des {
-        margin-left: 80px;
-        padding-left: 80px;
-        border-left: 1px rgba(45, 45, 45, 0.2) solid;
+        margin-left: 40px;
+        padding-left: 40px;
+        border-left: 1px #F4F4F4 solid;
         line-height: 2;
         color: rgba(45, 45, 45, 0.9);
-        font-size: 1.125em; }
-      body .about .content .img {
-        width: 60%; }
-        body .about .content .img img {
-          max-width: 100%; }
+        font-size: 14px; }
+      body .about .content .img img {
+        max-width: 30%;
+        display: block;
+        margin: 0 auto; }
       @media screen and (max-width: 800px) {
         body .about .content {
           -webkit-box-orient: vertical;
@@ -162,47 +166,52 @@ body {
             padding-left: 0;
             border: none; }
           body .about .content .img {
-            max-width: 50%;
-            text-align: center;
+            max-width: 100%;
             margin-bottom: 20px; }
             body .about .content .img img {
-              max-width: 100%; } }
-    body .about .link-group ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 20%;
-      max-width: 500px;
-      margin: 0 auto;
-      list-style: none;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      padding-top: 20px; }
-      @media screen and (max-width: 800px) {
-        body .about .link-group ul {
-          width: 80%; } }
-      body .about .link-group ul li {
-        font-size: 26px;
-        margin: 0 4px; }
-        body .about .link-group ul li a {
-          top: 0px; }
-          body .about .link-group ul li a:hover {
-            position: relative;
-            top: -2px; }
+              max-width: 50%; } }
+    body .about .link-group {
+      padding: 16px 0; }
+      body .about .link-group ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 20%;
+        max-width: 500px;
+        margin: 0 auto;
+        list-style: none;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        @media screen and (max-width: 800px) {
+          body .about .link-group ul {
+            width: 80%; } }
+        body .about .link-group ul li {
+          font-size: 26px;
+          margin: 0 4px; }
+          body .about .link-group ul li a {
+            top: 0px; }
+            body .about .link-group ul li a:hover {
+              position: relative;
+              top: -2px; }
     body .about .skills {
-      font-size: 12px;
+      font-size: 14px;
       list-style: none;
       overflow: hidden;
-      margin: 20px 0; }
+      margin-bottom: 20px; }
       body .about .skills li {
         float: left;
         background-color: #F4F4F4;
         color: #000000;
         margin: 4px 8px 4px 0;
         padding: 0 8px;
-        border-radius: 4px; }
+        border-radius: 4px;
+        line-height: 24px; }
   body .exp {
-    background-color: #F4F4F4;
+    background-color: #ffffff;
+    background-image: url(/img/bgImage.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
     margin-bottom: -70px;
     padding: 100px 0 170px 0;
     border-radius: 70px 70px 0 0; }
@@ -250,22 +259,20 @@ body {
             -ms-flex-align: start;
             align-items: flex-start; } }
         body .exp .expList .title h3 {
-          font-size: 1.25em;
-          color: #000000;
           margin-right: 20px; }
         body .exp .expList .title h4 {
           font-size: 1em;
           color: rgba(45, 45, 45, 0.9);
           font-weight: 200; }
       body .exp .expList .job {
-        padding-left: 60px; }
+        padding-left: 60px;
+        color: rgba(45, 45, 45, 0.9); }
         body .exp .expList .job .jobTitle {
           color: #000000;
           font-weight: 500;
           margin-bottom: 8px;
           margin-left: -20px; }
         body .exp .expList .job .list {
-          color: rgba(45, 45, 45, 0.6);
           margin-bottom: 20px; }
         body .exp .expList .job .des {
           margin-left: -20px;
@@ -327,8 +334,8 @@ body {
               box-shadow: 0px 2px 4px #F4F4F4;
               cursor: default; }
           body .learn .project li a img {
-            max-width: 300px;
-            width: 40%;
+            max-width: 500px;
+            width: 50%;
             margin-right: 16px; }
             @media screen and (max-width: 700px) {
               body .learn .project li a img {
@@ -356,8 +363,13 @@ body {
               padding: 0 8px;
               border-radius: 4px;
               line-height: 24px; }
+  body .more {
+    background-color: #ffffff;
+    background-image: url(/img/bgImage2.jpg);
+    background-position: center center;
+    background-size: cover; }
   body .award {
-    background-color: #F4F4F4;
+    background-color: #ffffff;
     padding: 100px 0 170px 0;
     border-radius: 70px 70px 0 0; }
     @media screen and (max-width: 700px) {
