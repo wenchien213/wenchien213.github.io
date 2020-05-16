@@ -292,15 +292,15 @@ body {
     body .learn .fullImg {
       max-width: 100%;
       margin: 16px 0; }
-    body .learn .project {
+    body .learn .projectList {
       list-style: none; }
-      body .learn .project li {
+      body .learn .projectList li {
         margin-bottom: 32px; }
         @media screen and (max-width: 700px) {
-          body .learn .project li {
+          body .learn .projectList li {
             margin-right: 0;
             margin-bottom: 20px; } }
-        body .learn .project li a {
+        body .learn .projectList li .project {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -316,7 +316,7 @@ body {
           -o-transition: .2s ease-in;
           transition: .2s ease-in; }
           @media screen and (max-width: 700px) {
-            body .learn .project li a {
+            body .learn .projectList li .project {
               -webkit-box-orient: vertical;
               -webkit-box-direction: normal;
               -ms-flex-direction: column;
@@ -324,39 +324,32 @@ body {
               -webkit-box-align: center;
               -ms-flex-align: center;
               align-items: center; } }
-          body .learn .project li a:hover {
-            -webkit-box-shadow: 0px 2px 16px #67d5d1;
-            box-shadow: 0px 2px 16px #67d5d1; }
-          body .learn .project li a.locked {
-            -webkit-box-shadow: 0px 2px 4px #F4F4F4;
-            box-shadow: 0px 2px 4px #F4F4F4; }
-            body .learn .project li a.locked:hover {
-              -webkit-box-shadow: 0px 2px 4px #F4F4F4;
-              box-shadow: 0px 2px 4px #F4F4F4;
-              cursor: default; }
-          body .learn .project li a img {
+          body .learn .projectList li .project:hover {
+            -webkit-box-shadow: 0px 2px 16px rgba(45, 45, 45, 0.6);
+            box-shadow: 0px 2px 16px rgba(45, 45, 45, 0.6); }
+          body .learn .projectList li .project img {
             max-width: 500px;
             width: 50%;
             margin-right: 16px; }
             @media screen and (max-width: 700px) {
-              body .learn .project li a img {
+              body .learn .projectList li .project img {
                 max-width: 100%;
                 width: 100%;
                 margin-right: 0;
                 margin-bottom: 16px; } }
-          body .learn .project li a h3, body .learn .project li a p {
+          body .learn .projectList li .project h3, body .learn .projectList li .project p {
             color: rgba(45, 45, 45, 0.9); }
-          body .learn .project li a h3 {
+          body .learn .projectList li .project h3 {
             margin-bottom: 8px; }
           @media screen and (max-width: 700px) {
-            body .learn .project li a .des {
+            body .learn .projectList li .project .des {
               width: 100%; } }
-          body .learn .project li a .skills {
+          body .learn .projectList li .project .skills {
             font-size: 12px;
             list-style: none;
             overflow: hidden;
             margin: 8px 0; }
-            body .learn .project li a .skills li {
+            body .learn .projectList li .project .skills li {
               float: left;
               background-color: #F4F4F4;
               color: #000000;
@@ -364,6 +357,30 @@ body {
               padding: 0 8px;
               border-radius: 4px;
               line-height: 24px; }
+          body .learn .projectList li .project .btn {
+            float: right;
+            margin-top: 8px;
+            border-radius: 8px;
+            background-color: #4fc6b9;
+            width: 160px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;
+            color: #ffffff; }
+            body .learn .projectList li .project .btn:hover {
+              background-color: #67d5d1; }
+            @media screen and (max-width: 700px) {
+              body .learn .projectList li .project .btn {
+                width: 100%; } }
+        body .learn .projectList li .locked {
+          -webkit-box-shadow: 0px 2px 4px #F4F4F4;
+          box-shadow: 0px 2px 4px #F4F4F4; }
+          body .learn .projectList li .locked:hover {
+            -webkit-box-shadow: 0px 2px 4px #F4F4F4;
+            box-shadow: 0px 2px 4px #F4F4F4; }
   body .more {
     background-color: #ffffff;
     background-image: url(/img/bgImage2.jpg);

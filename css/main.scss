@@ -320,7 +320,7 @@ body{
             max-width: 100%;
             margin: 16px 0;
         }
-        .project{
+        .projectList{
             list-style: none;
             li{
                 margin-bottom: 32px;
@@ -328,7 +328,7 @@ body{
                     margin-right: 0;
                     margin-bottom: 20px;
                 }
-                a{
+                .project{
                     display: flex;
                     align-items: center;
                     padding: 14px 16px;
@@ -341,14 +341,7 @@ body{
                         align-items: center;
                     }
                     &:hover{
-                        box-shadow: 0px 2px 16px $link-hover;
-                    }
-                    &.locked{
-                        box-shadow: 0px 2px 4px $gray-bg;
-                        &:hover{
-                            box-shadow: 0px 2px 4px $gray-bg;
-                            cursor: default;
-                        }
+                        box-shadow: 0px 2px 16px $gray-600;
                     }
                     img{
                         max-width: 500px;
@@ -386,6 +379,30 @@ body{
                             border-radius: 4px;
                             line-height: 24px;
                         }
+                    }
+                    .btn{
+                        float: right;
+                        margin-top: 8px;
+                        border-radius: 8px;
+                        background-color: $link;
+                        width: 160px;
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        transition: .3s;
+                        color: #ffffff;
+                        &:hover{
+                            background-color: $link-hover;
+                        }
+                        @media screen and (max-width: 700px){
+                            width: 100%;
+                        }
+                    }
+                }
+                .locked{
+                    box-shadow: 0px 2px 4px $gray-bg;
+                    &:hover{
+                        box-shadow: 0px 2px 4px $gray-bg;
                     }
                 }
             }
