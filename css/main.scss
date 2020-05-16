@@ -453,8 +453,10 @@ body{
         }
     }
     .footer{
-        background: $link;
-        background: $main;
+        background-color: #ffffff;
+        background-image: url(/img/bgImage3.jpg);
+        background-position: center center;
+        background-size: cover;
         padding: 10px;
         .copyright{
             font-size: 0.625em;
