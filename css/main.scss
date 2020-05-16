@@ -3,8 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-$main:linear-gradient(115deg, #5dc1eb 7%, #71e9b6 81%);
-$link:#5dc1eb;
+$main:linear-gradient(115deg, #4fc6b9 7%, #71e9b6 81%);
+$link:#4fc6b9;
 $link-hover:#67d5d1;
 $gray-100:#ffffff;
 $gray-200:rgba(45,45,45,.2);
@@ -40,7 +40,7 @@ body{
         font-size: 3.5em;
         font-weight: 100;
         color: $gray-100;
-        text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
         span{
             font-weight: 500;
             white-space: nowrap;
@@ -149,8 +149,11 @@ body{
         }
     }
     .top{
-        background: $link;
-        background: $main;
+        background-color: #ffffff;
+        background-image: url(/img/bgImage3.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
         margin-bottom: -70px;
         .content{
             max-width: 1200px;
@@ -338,7 +341,7 @@ body{
                         align-items: center;
                     }
                     &:hover{
-                        box-shadow: 0px 2px 16px $gray-600;
+                        box-shadow: 0px 2px 16px $link-hover;
                     }
                     &.locked{
                         box-shadow: 0px 2px 4px $gray-bg;
