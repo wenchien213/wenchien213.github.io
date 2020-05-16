@@ -15,7 +15,7 @@ body {
     font-size: 3.5em;
     font-weight: 100;
     color: #ffffff;
-    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2); }
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); }
     body h1 span {
       font-weight: 500;
       white-space: nowrap; }
@@ -59,7 +59,7 @@ body {
     color: #000000;
     font-size: 1rem; }
   body a {
-    color: #5dc1eb;
+    color: #4fc6b9;
     text-decoration: none;
     -webkit-transition: .4s;
     -o-transition: .4s;
@@ -112,10 +112,11 @@ body {
         body .header .menu .switch a:hover {
           background-color: rgba(255, 255, 255, 0.2); }
   body .top {
-    background: #5dc1eb;
-    background: -webkit-linear-gradient(335deg, #5dc1eb 7%, #71e9b6 81%);
-    background: -o-linear-gradient(335deg, #5dc1eb 7%, #71e9b6 81%);
-    background: linear-gradient(115deg, #5dc1eb 7%, #71e9b6 81%);
+    background-color: #ffffff;
+    background-image: url(/img/bgImage3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
     margin-bottom: -70px; }
     body .top .content {
       max-width: 1200px;
@@ -236,10 +237,10 @@ body {
         body .exp .expList .title::before {
           content: "";
           display: inline-block;
-          background: #5dc1eb;
-          background: -webkit-linear-gradient(335deg, #5dc1eb 7%, #71e9b6 81%);
-          background: -o-linear-gradient(335deg, #5dc1eb 7%, #71e9b6 81%);
-          background: linear-gradient(115deg, #5dc1eb 7%, #71e9b6 81%);
+          background: #4fc6b9;
+          background: -webkit-linear-gradient(335deg, #4fc6b9 7%, #71e9b6 81%);
+          background: -o-linear-gradient(335deg, #4fc6b9 7%, #71e9b6 81%);
+          background: linear-gradient(115deg, #4fc6b9 7%, #71e9b6 81%);
           width: 20px;
           height: 20px;
           border-radius: 100px;
@@ -324,8 +325,8 @@ body {
               -ms-flex-align: center;
               align-items: center; } }
           body .learn .project li a:hover {
-            -webkit-box-shadow: 0px 2px 16px rgba(45, 45, 45, 0.6);
-            box-shadow: 0px 2px 16px rgba(45, 45, 45, 0.6); }
+            -webkit-box-shadow: 0px 2px 16px #67d5d1;
+            box-shadow: 0px 2px 16px #67d5d1; }
           body .learn .project li a.locked {
             -webkit-box-shadow: 0px 2px 4px #F4F4F4;
             box-shadow: 0px 2px 4px #F4F4F4; }
@@ -411,10 +412,10 @@ body {
             body .award .content .awards li h3 span {
               padding: 4px;
               border-radius: 4px;
-              background: #5dc1eb;
-              background: -webkit-linear-gradient(335deg, #5dc1eb 7%, #71e9b6 81%);
-              background: -o-linear-gradient(335deg, #5dc1eb 7%, #71e9b6 81%);
-              background: linear-gradient(115deg, #5dc1eb 7%, #71e9b6 81%);
+              background: #4fc6b9;
+              background: -webkit-linear-gradient(335deg, #4fc6b9 7%, #71e9b6 81%);
+              background: -o-linear-gradient(335deg, #4fc6b9 7%, #71e9b6 81%);
+              background: linear-gradient(115deg, #4fc6b9 7%, #71e9b6 81%);
               color: #ffffff;
               font-weight: 500;
               margin-right: 8px; }
@@ -432,10 +433,10 @@ body {
         body .award .content .img img {
           max-width: 100%; }
   body .footer {
-    background: #5dc1eb;
-    background: -webkit-linear-gradient(335deg, #5dc1eb 7%, #71e9b6 81%);
-    background: -o-linear-gradient(335deg, #5dc1eb 7%, #71e9b6 81%);
-    background: linear-gradient(115deg, #5dc1eb 7%, #71e9b6 81%);
+    background: #4fc6b9;
+    background: -webkit-linear-gradient(335deg, #4fc6b9 7%, #71e9b6 81%);
+    background: -o-linear-gradient(335deg, #4fc6b9 7%, #71e9b6 81%);
+    background: linear-gradient(115deg, #4fc6b9 7%, #71e9b6 81%);
     padding: 10px; }
     body .footer .copyright {
       font-size: 0.625em;
