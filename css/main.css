@@ -207,6 +207,9 @@ body {
         padding: 0 8px;
         border-radius: 4px;
         line-height: 24px; }
+        body .about .skills li a {
+          color: linear-gradient(115deg, #4fc6b9 7%, #71e9b6 81%);
+          font-weight: bold; }
   body .exp {
     background-color: #ffffff;
     background-image: url(/img/bgImage.jpg);
